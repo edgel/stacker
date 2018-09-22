@@ -1,6 +1,6 @@
 # Packer
 
-Package Builder for Jsnext Application
+Package Builder for build of nodejs application
 
 $ yarn init
 
