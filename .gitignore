@@ -1,4 +1,6 @@
 out/
 console.bat
+.build/yarn.lock
+.build/yarn-error.log
 .build/node_modules/
 .build/cache_sources/
