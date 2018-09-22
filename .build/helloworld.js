@@ -1,0 +1,1 @@
+console.log("Path: ", process.env.PATH);

@@ -1,0 +1,38 @@
+﻿
+/* -------- Banner layout define -------- */
+
+.banner{
+  margin-bottom:10px;
+  padding:30px 0 30px;
+  color:#fff;
+  background-color:#eee;
+  background:no-repeat scroll 100% 10% #463fd4;
+
+  h1{
+    font-size:68px;
+    letter-spacing:-0.05em;
+    line-height:47px
+  }
+
+  h2{
+    font-weight:300;
+  }
+
+  p{
+    margin-bottom:15px;
+    font-weight:200;
+  }
+
+  &>hr{
+    border-top-color:#d5d5d5;
+  }
+
+  .row-card {
+    width: 100%;
+  }
+
+  .row-link {
+    @extend .w3-btn:hover;
+    margin-top: 10px;
+  }
+}

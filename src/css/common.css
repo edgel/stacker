@@ -1,0 +1,168 @@
+
+/* -------- Common layout define -------- */
+
+html {
+  overflow-x:hidden;
+  overflow-y:scroll;
+}
+
+body {
+}
+
+pre {
+  border-left: 1px solid #1e5799;
+}
+
+hr {
+  border: 0;
+  border-bottom: 1px solid #ddd;
+  margin: 10px 0;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.container {
+  margin-right:auto;
+  margin-left:auto;
+  padding-left:15px;
+  padding-right:15px;
+  max-width:100%;
+
+  /* Prevents distributing space between rows */
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+
+  /* Use flexbox when possible to avoid `letter-spacing` side-effects. */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.w3-large {
+  font-size: 24px !important;
+}
+
+.w3-btn, .w3-button {
+    color: white;
+    border-radius: 5px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.w3-btn-hover, .w3-button-hover {
+  @extend .w3-btn:hover;
+}
+
+.w3-cell-top{width:32%;}
+
+.w3-display-topright{position:absolute;right:1px;top:1px}
+
+@media (min-width:0px){.container{width:750px}.w3-cell-top{width:100%;}.w3-cell{display:block; margin-bottom: 10px;}}
+
+@media (min-width:992px){.container{width:970px}.w3-cell-top{width:32%;}.w3-cell{display:table-cell;}}
+
+@media (min-width:1200px){.container{width:1170px}.w3-cell-top{width:32%;}.w3-cell{display:table-cell;}}
+
+/* -------- The w3-theme and extension -------------- */
+
+@import "./w3-css/w3-theme-blue";
+
+.w3-title-theme {color:#2196f3; background-color:#f2f9fe !important}
+.w3-hover-title-theme:hover {color:#2196f3; background-color:#f2f9fe !important}
+
+/* -------- Font for Customized Icons -------- */
+
+@font-face {
+    font-family: "Customized";
+    src: url("../font/out/cs.eot"); /* IE9 */
+    src: url("../font/out/cs.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../font/out/cs.woff") format("woff"), /* chrome, firefox */
+    url("../font/out/cs.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("../font/out/cs.svg#Customized") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+.csicos, i[class^="cs-"] {
+  display: inline-block;
+  font: normal normal normal 14px/1 Customized;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  &::before {
+    content: attr(value);
+  }
+}
+
+/* -------- Font for FontAwesome Icons -------- */
+
+@font-face {
+    font-family: "FontAwesome";
+    src: url("../font/out/fa.eot"); /* IE9 */
+    src: url("../font/out/fa.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../font/out/fa.woff") format("woff"), /* chrome, firefox */
+    url("../font/out/fa.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("../font/out/fa.svg#FontAwesome") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+.faicos, i[class^="fa-"] {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  &::before {
+    content: attr(value);
+  }
+}
+
+/* -------- Font for Material Icons -------- */
+
+@font-face {
+    font-family: "Material Icons";
+    src: url("../font/out/md.eot"); /* IE9 */
+    src: url("../font/out/md.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../font/out/md.woff") format("woff"), /* chrome, firefox */
+    url("../font/out/md.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("../font/out/md.svg#Material Icons") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+.mdicos, i[class^="md-"] {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: inherit;  /* Preferred icon size: 24px */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+  &::before {
+    content: attr(value);
+  }
+}

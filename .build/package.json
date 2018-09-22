@@ -1,0 +1,37 @@
+{
+  "name": "Packer",
+  "version": "1.0.0",
+  "description": "Package Builder",
+  "private": true,
+  "repository": "http://yeahzhu.com/",
+  "author": "Edgel.Young",
+  "license": "MPL2.0",
+  "scripts": {
+    "hello-world": "node hello-world.js",
+    "webpack-build": "webpack --mode production",
+    "webpack-start-server": "webpack-dev-server --mode production --host 0.0.0.0"
+  },
+  "dependencies": {
+    "mithril": "^1.1.6",
+    "w3-css": "^4.1.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "7.1.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^1.0.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "json-loader": "^0.5.7",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.1.0",
+    "uglifyjs-webpack-plugin": "^2.0.0",
+    "url-loader": "^1.1.1",
+    "webpack": "^4.19.0",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.8",
+    "webpack-subresource-integrity": "^1.1.0-rc.6"
+  }
+}

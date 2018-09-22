@@ -1,0 +1,21 @@
+﻿
+.mainContent {
+  padding: 10px 5px 10px 0px;
+  .sortable {
+    cursor: pointer;
+  }
+  .table-holder {
+    overflow-y:hidden;
+    overflow-x:auto;
+  }
+  table thead tr {
+    @extend .w3-theme-l1;
+  }
+  table tbody tr:hover{
+    cursor: pointer;
+    @extend .w3-theme-l3;
+  }
+  table tbody tr:nth-child(even) {
+    @extend .w3-theme-l5;
+  }
+}

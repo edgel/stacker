@@ -1,0 +1,4 @@
+out/
+console.bat
+.build/node_modules/
+.build/cache_sources/
