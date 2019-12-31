@@ -1,6 +1,6 @@
-# Packer
+# Stacker
 
-Package Builder for build of nodejs application
+Stack Builder for build of nodejs application
 
 $ yarn init
 
